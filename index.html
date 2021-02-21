@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Camera Shy</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstarp Script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/65fe1399ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="theme-switch-wrapper">
+    <span id="toogle-icon">
+        <span class="toggle-text" id="toogle-text-change">Light Mode</span>
+        <i class="fas fa-sun" id="dark-light-symbol"></i>
+    </span>
+    <label class="theme-switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+    </label>
+</div>
+
+  <span class="top-button"><a href="#title"><i class="fas fa-chevron-circle-up fa-3x"></i></a></span>
+
+  <section id="title" class="coloured-section">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="">Camera Shy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Frameworks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#More-about-code">Application Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Clone Project</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="main-heading">Meet new and interesting people by just Playing.</h1>
+          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i>&nbsp;Apple</button>
+          <button class="btn btn-light btn-lg download-button" type="button"><i class="fab fa-swift"></i>&nbsp;Swift</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="iphone" src="images/mockup/image0_iphone12black_portrait.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <div class="row">
+      <div class="col-lg-4 feature-box ">
+        <i class="icon fas fa-database fa-4x"></i>
+        <h3 class="feature-title">Easy to use.</h3>
+        <p>We used Node.js and express.js for beckned.</p>
+      </div>
+
+      <div class="col-lg-4 feature-box ">
+        <i class="icon fas fa-user-secret fa-4x"></i>
+        <h3 class="feature-title">Privacy matters</h3>
+        <p>We used Microsoft Azure Face API for recognition for face recognition</p>
+      </div>
+
+      <div class="col-lg-4 feature-box">
+        <i class="icon fab fa-figma fa-4x"></i>
+        <h3 class="feature-title">UI Prototype</h3>
+        <p>We used figma to create ours UI mockups.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- features-screenshoot -->
+
+  <section class="coloured-section" id="features-screenshot">
+
+    <div id="carouselControls" class="carousel slide" data-ride="carousel" data-touch="true" data-interval="3000" data-pause=false>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="login-screen" src="images\mockup\mockup_slideshow_1.png" alt="complete Your Profile">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="features-screenshot-text"> Add Profile image to your account to get into the actual game and have fun.</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="features-screenshot-text">Sign-Up / Log-In using Apple Id to enter the game.</h2>
+            </div>
+            <div class="col-lg-6">
+              <img class="chat-screen" src="images\mockup\mockup_slideshow_2.png" alt="Signup/Login page">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="main-screen" src="images\mockup\mockup_slideshow_3.png" alt="launchScreen">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="features-screenshot-text">Main screen when player launch the app to get started into the app.</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="features-screenshot-text">Add people in your room by sharing the game code.</h2>
+            </div>
+            <div class="col-lg-6">
+              <img class="addNewPeople-screen" src="images\mockup\mockup_slideshow_4.png" alt="InviteScreen screen">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <!-- <section id="press">
+    <img src="images/techcrunch.png" alt="tc-logo">
+    <img src="images/tnw.png" alt="tnw-logo">
+    <img src="images/bizinsider.png" alt="biz-insider-logo">
+    <img src="images/mashable.png" alt="mashable-logo">
+
+  </section> -->
+
+
+  <!-- information about aplication -->
+
+  <section class="white-section" id="More-about-code">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <i class="fab fa-apple fa-6x"></i>
+          <h2 class="information">iOS Application</h2>
+          <p>This application required ios 14 or high to be compatible with your device.</p>
+          <p><a class="btn btn-outline-dark" href="https://www.apple.com/ca/ios/ios-14/" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-md-6">
+          <i class="fas fa-map-marked-alt fa-6x"></i>
+          <h2 class="information">Apple Maps</h2>
+          <p>Used apple map api to integrate maps in our application.</p>
+          <p><a class="btn btn-outline-dark" href="https://developer.apple.com/maps/" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-md-12">
+          <i class="fab fa-swift fa-6x"></i>
+          <h2 class="information">Swift</h2>
+          <p>This application is made using storyboard and swiftUI in Xcode.</p>
+          <p><a class="btn btn-outline-dark" href="https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta" class="container-fluid coloured-section">
+    <h3 class="punch-line">You don't have to struggle during covid   play Camera Shy and leave your stress aside.</h3>
+    <button type="button" class="btn btn-light btn-lg download-button"><a href="https://github.com/eladdekel/camerashy"><img class="Icon" src="https://image.flaticon.com/icons/svg/733/733609.svg" />&nbsp;Clone Project.</a></button>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="coloured-section">
+
+    <p>© Copyright 2021 Camera Shy</p>
+
+  </footer>
+
+<!-- Script -->
+<script src="script.js" ></script>
+</body>
+
+</html>
